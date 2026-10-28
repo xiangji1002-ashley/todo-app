@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang = "zh-CN">
+    <head>
+        <meta charset = "UTP-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>My to-do list</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+          <h1>My To-Do List</h1>
+          <p>This is my first web app, welcome to explore with me</p>
+
+          <form id="task-form">
+            <input
+              id="task-input"
+              type="text"
+              placeholder="Please enter your to do item:"
+              maxlength="100"
+              required
+            >
+            <button type="submit">Add</button> 
+          </form>
+
+          <div class="toolbar">
+            <div class="filters">
+              <button data-filter="all" class="active">All</button>
+              <button data-filter="active">Unfinished</button>
+              <button data-filter="completed">Finished</button>
+            </div>
+
+            <span id="task-count"></span>
+          </div>
+
+          <ul id="task-list">
+            <li>
+                <input type="checkbox">
+                <span>Learn Algorithm</span>
+                <button type="buttom">delete</button>
+            </li>
+
+            <li>
+                <input type="checkbox">
+                <span>Learn AI Engineering</span>
+                <button type="button">delete</button>
+            </li>
+          </ul>
+        </main>
+    </body>
+</html>
